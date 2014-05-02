@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Office</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "/assets/styles/main" %>
+  </head>
+<body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <%= yield %>
+
+  <%= javascript_include_tag "/assets/scripts/application.js" %>
+  </body>
+</html>

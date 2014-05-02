@@ -1,0 +1,11 @@
+{
+  "name": "office",
+  "dependencies": {
+    "angular": "latest",
+    "angular-ujs": "latest",
+    "html5shiv": "latest",
+    "requirejs": "latest",
+    "requirejs-domready": "latest",
+    "normalize-css": "latest"
+  }
+}

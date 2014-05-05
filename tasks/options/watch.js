@@ -1,12 +1,7 @@
 module.exports = {
   debug: {
-    files: ['app/scripts/**/*', 'app/styles/**/*', 'config/build.js'],
-    tasks: ['build:debug'],
-    options: {
-      livereload: {
-        port: 3000
-      }
-    }
+    files: ['app/scripts/**/*', 'app/styles/**/*', 'config/build.js', 'tasks/**/*.js'],
+    tasks: ['build:debug']
   },
   rails: {
     files: ['config/**/*.rb', 'lib/**/*.rb', 'Gemfile.lock'],

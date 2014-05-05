@@ -1,7 +1,7 @@
 #nothing{'ng-controller' => 'BaseCtrl'}
-  %h1{'ng-bind' => :title}
+  %h1 Page1
+  %h5{'ng-bind' => :title}
   %input{type: :text, 'ng-model' => 'title'}
-
 - footer_javascript do
   :javascript
-    require(['index']);
+    require(['page1']);

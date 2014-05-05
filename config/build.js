@@ -1,17 +1,18 @@
 requirejs.config({
-  wrap: true,
-  insertRequire: ['office'],
-  deps: ['office'],
+  // wrap: true,
+  // allowSourceOverwrites: true,
+  // insertRequire: ['office'],
+  // deps: ['office'],
   shim: {
     'angular': {
       exports: 'angular'
-    }
+    },
+    'angular-ujs': ['angular']
   },
   paths: {
-    'domReady':    '../../../../../bower_components/requirejs-domready/domReady',
+    'require': '../../../../../bower_components/requirejs/require',
     'angular':     '../../../../../bower_components/angular/angular',
-    'angular-ujs': '../../../../../bower_components/angular-ujs/build/angular-ujs',
-    'office': 'main'
+    'angular-ujs': '../../../../../bower_components/angular-ujs/build/angular-ujs'
   }
 })
 

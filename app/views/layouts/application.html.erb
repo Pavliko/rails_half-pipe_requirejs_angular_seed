@@ -10,6 +10,7 @@
   <p class="alert"><%= alert %></p>
   <%= yield %>
 
-  <%= javascript_include_tag "/assets/scripts/application.js" %>
+  <script data-main="/assets/scripts/common" src="/assets/scripts/require.js"></script>
+  <%= yield :footer_scripts %>
   </body>
 </html>

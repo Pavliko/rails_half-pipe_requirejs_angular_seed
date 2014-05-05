@@ -3,7 +3,7 @@ module.exports = {
     expand: true,
     cwd: '<%= dirs.tmp %>/prepare/assets/scripts',
     src: ['**/*.coffee'],
-    dest: '<%= dirs.tmp %>/prepare/assets/scripts',
+    dest: '<%= dirs.tmp %>/prepare/assets/build-scripts',
     ext: '.js'
   }
 };

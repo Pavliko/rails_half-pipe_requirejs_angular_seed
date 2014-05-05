@@ -1,9 +1,21 @@
 module.exports = {
   options: {
-    name: "../../../../../node_modules/almond/almond",
-    out: "<%= dirs.tmp %>/public/assets/scripts/application.js",
-    baseUrl: "<%= dirs.tmp %>/prepare/assets/scripts",
-    mainConfigFile: "config/build.js"
+    dir: "<%= dirs.tmp %>/public/assets/scripts",
+    almond: true,
+    // out: "<%= dirs.tmp %>/public/assets/scripts/application.js",
+    baseUrl: "<%= dirs.tmp %>/prepare/assets/build-scripts",
+    mainConfigFile: "config/build.js",
+    modules: [
+      { name: 'common' },
+      {
+        name: 'index',
+        exclude: ['common']
+      },
+      {
+        name: 'page1',
+        exclude: ['common']
+      }
+    ]
   },
   debug: {
     options: {
